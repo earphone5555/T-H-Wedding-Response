@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>育彤 & 雅涵｜Yu-Tung & Ya-Han Wedding</title>
+  <!-- Google Fonts: Cormorant Garamond & Noto Serif TC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-page: #F4EAE8;        /* 溫暖霧煙燻粉背景 */
+      --bg-card: #FFFCFB;        /* 純淨暖象牙白卡片 */
+      --bg-subtle: #FAF5F4;      /* 區塊淺色襯底 */
+      --pink-dusty: #D5A6A6;     /* 主視覺煙燻粉 */
+      --pink-deep: #A86E6E;      /* 乾燥玫瑰色（重點與按鈕） */
+      --pink-hover: #8F5858;     /* 按鈕懸停深玫瑰色 */
+      --text-main: #3E3232;      /* 深可可暖灰（高清晰度主文字） */
+      --text-muted: #7A6666;     /* 柔和次要文字 */
+      --border-soft: #E6D7D5;    /* 柔和細邊框 */
+      --nav-height: 60px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--nav-height) + 20px);
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: 'Noto Serif TC', serif;
+      line-height: 1.8;
+      min-height: 100vh;
+      padding-top: calc(var(--nav-height) + 28px);
+      padding-bottom: 60px;
+      padding-left: 16px;
+      padding-right: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* 頂部固定導覽列 */
+    .top-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--nav-height);
+      background-color: rgba(255, 252, 251, 0.92);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border-soft);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    .nav-inner {
+      width: 100%;
+      max-width: 720px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      transition: color 0.2s ease;
+      padding: 4px 0;
+    }
+
+    .nav-links a:hover {
+      color: var(--pink-deep);
+    }
+
+    /* 主卡片容器 */
+    .card {
+      background-color: var(--bg-card);
+      width: 100%;
+      max-width: 540px;
+      margin: 0 auto;
+      border-radius: 16px;
+      box-shadow: 0 12px 36px rgba(168, 110, 110, 0.08);
+      border: 1px solid var(--border-soft);
+      padding: 48px 38px;
+    }
+
+    /* 區塊分隔線 */
+    .section-divider {
+      height: 1px;
+      background-color: var(--border-soft);
+      margin: 40px 0;
+    }
+
+    .section-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      color: var(--pink-deep);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    /* 方案 A：微拱門藝廊風照片 */
+    .photo-wrapper {
+      width: 210px;
+      height: 280px;
+      margin: 0 auto 28px;
+      padding: 6px;
+      border: 1px solid var(--pink-dusty);
+      border-radius: 110px 110px 8px 8px;
+    }
+
+    .photo-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 25%;
+      border-radius: 104px 104px 4px 4px;
+      display: block;
+    }
+
+    /* 關於我們：標題與引言 */
+    .about-section {
+      text-align: center;
+    }
+
+    .names-zh {
+      font-size: 1.55rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      color: var(--text-main);
+      margin-bottom: 2px;
+    }
+
+    .names-en {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: var(--pink-deep);
+      margin-bottom: 24px;
+    }
+
+    .poem {
+      font-size: 0.95rem;
+      color: var(--text-main);
+      line-height: 2.05;
+      letter-spacing: 0.04em;
+      margin-bottom: 20px;
+    }
+
+    .postpone-note {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.95;
+      letter-spacing: 0.03em;
+      padding-top: 18px;
+      border-top: 1px solid var(--border-soft);
+    }
+
+    /* 婚禮詳情區塊 */
+    .venue-box {
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-soft);
+      border-radius: 10px;
+      padding: 22px 24px;
+      margin-bottom: 20px;
+    }
+
+    .venue-row {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      letter-spacing: 0.03em;
+    }
+
+    .venue-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .venue-label {
+      color: var(--text-muted);
+      width: 82px;
+      flex-shrink: 0;
+    }
+
+    .venue-value {
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    /* 下拉展開式交通指引 (Accordion Dropdowns) */
+    .traffic-dropdowns {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .traffic-dropdown {
+      border: 1px solid var(--border-soft);
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      overflow: hidden;
+    }
+
+    .traffic-header {
+      width: 100%;
+      padding: 13px 16px;
+      background: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Noto Serif TC', serif;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-main);
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      text-align: left;
+      transition: background-color 0.2s ease;
+    }
+
+    .traffic-header:hover {
+      background-color: var(--bg-subtle);
+    }
+
+    .traffic-arrow {
+      width: 10px;
+      height: 10px;
+      border-right: 1.5px solid var(--text-muted);
+      border-bottom: 1.5px solid var(--text-muted);
+      transform: rotate(45deg);
+      transition: transform 0.25s ease;
+      margin-right: 4px;
+      flex-shrink: 0;
+    }
+
+    .traffic-dropdown.open .traffic-arrow {
+      transform: rotate(-135deg);
+    }
+
+    .traffic-body {
+      display: none;
+      padding: 14px 16px 16px;
+      border-top: 1px solid var(--border-soft);
+      background-color: var(--bg-subtle);
+      font-size: 0.88rem;
+      color: var(--text-main);
+      line-height: 1.85;
+      letter-spacing: 0.02em;
+    }
+
+    .traffic-dropdown.open .traffic-body {
+      display: block;
+    }
+
+    .traffic-body p {
+      margin-bottom: 6px;
+    }
+
+    .traffic-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .parking-highlight {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--border-soft);
+      color: var(--pink-deep);
+      font-weight: 500;
+    }
+
+    /* 表單欄位樣式 */
+    .form-group {
+      margin-bottom: 22px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: var(--text-main);
+      letter-spacing: 0.03em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      font-size: 16px; /* 防止手機點擊時自動放大畫面 */
+      font-family: 'Noto Serif TC', serif;
+      color: var(--text-main);
+      background-color: #FFFFFF;
+      border: 1px solid var(--border-soft);
+      border-radius: 6px;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--pink-deep);
+      box-shadow: 0 0 0 3px rgba(213, 166, 166, 0.2);
+    }
+
+    /* 下拉選單箭頭 */
+    .select-wrapper {
+      position: relative;
+    }
+
+    .select-wrapper::after {
+      content: "";
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid var(--text-muted);
+      pointer-events: none;
+    }
+
+    select {
+      padding-right: 36px;
+      cursor: pointer;
+    }
+
+    /* 數字上下小箭頭微調器 (跨平台統一顯示) */
+    .number-stepper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .number-stepper input[type="number"]::-webkit-inner-spin-button,
+    .number-stepper input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .number-stepper input[type="number"] {
+      -moz-appearance: textfield;
+      padding-right: 40px;
+    }
+
+    .stepper-btns {
+      position: absolute;
+      right: 1px;
+      top: 1px;
+      bottom: 1px;
+      width: 34px;
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid var(--border-soft);
+      border-radius: 0 5px 5px 0;
+      overflow: hidden;
+      background-color: var(--bg-subtle);
+    }
+
+    .step-btn {
+      flex: 1;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      transition: background-color 0.15s, color 0.15s;
+      user-select: none;
+    }
+
+    .step-btn:first-child {
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .step-btn:hover,
+    .step-btn:active {
+      background-color: var(--border-soft);
+      color: var(--text-main);
+    }
+
+    .step-btn svg {
+      width: 10px;
+      height: 10px;
+      fill: currentColor;
+    }
+
+    textarea {
+      min-height: 96px;
+      resize: vertical;
+    }
+
+    /* 智能表單動態展開控制 */
+    .hidden-section {
+      display: none;
+    }
+
+    .visible-section {
+      display: block;
+      animation: fadeIn 0.28s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-4px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 表單錯誤提示 */
+    .error-msg {
+      display: none;
+      font-size: 0.82rem;
+      color: #B84A4A;
+      margin-top: 6px;
+    }
+
+    /* 送出按鈕 */
+    .submit-btn {
+      width: 100%;
+      padding: 14px;
+      margin-top: 8px;
+      background-color: var(--pink-deep);
+      color: #FFFFFF;
+      border: none;
+      border-radius: 6px;
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: var(--pink-hover);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    /* 送出後跳轉之新頁面視圖 */
+    #successPage {
+      display: none;
+    }
+
+    .success-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .success-title {
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: var(--pink-deep);
+      letter-spacing: 0.1em;
+      margin-bottom: 10px;
+    }
+
+    .success-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+
+    .back-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-top: 28px;
+      background-color: transparent;
+      color: var(--text-muted);
+      border: 1px solid var(--border-soft);
+      border-radius: 6px;
+      font-family: 'Noto Serif TC', serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .back-btn:hover {
+      border-color: var(--pink-dusty);
+      color: var(--text-main);
+      background-color: var(--bg-subtle);
+    }
+
+    /* 響應式設計 (RWD) */
+    @media (max-width: 520px) {
+      body {
+        padding-top: calc(var(--nav-height) + 16px);
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .top-nav {
+        padding: 0 14px;
+      }
+
+      .nav-brand {
+        font-size: 1rem;
+      }
+
+      .nav-links {
+        gap: 14px;
+      }
+
+      .nav-links a {
+        font-size: 0.84rem;
+      }
+
+      .card {
+        padding: 36px 22px;
+      }
+
+      .photo-wrapper {
+        width: 185px;
+        height: 248px;
+      }
+
+      .venue-box {
+        padding: 18px 16px;
+      }
+
+      .venue-row {
+        flex-direction: column;
+        margin-bottom: 12px;
+      }
+
+      .venue-label {
+        width: auto;
+        font-size: 0.85rem;
+        margin-bottom: 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 頂部固定導覽列 -->
+  <nav class="top-nav" id="topNav">
+    <div class="nav-inner">
+      <a href="#about" class="nav-brand" id="navBrand">Yu-Tung &amp; Ya-Han</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">關於我們</a>
+        <a href="#details">婚禮詳情</a>
+        <a href="#rsvp">出席回函</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== 主頁面視圖 ==================== -->
+  <main class="card" id="mainPage">
+
+    <!-- 一、關於我們 -->
+    <section id="about" class="about-section">
+      <div class="photo-wrapper">
+        <img 
+          src="https://i.postimg.cc/9fQKsq4j/DSC09457-(2).jpg" 
+          alt="Yu-Tung & Ya-Han"
+          onerror="this.onerror=null; this.src='https://placehold.co/420x560/F4EAE8/A86E6E?text=Yu-Tung+%26+Ya-Han';"
+        />
+      </div>
+
+      <h1 class="names-zh">育彤 &amp; 雅涵</h1>
+      <div class="names-en">Yu-Tung &amp; Ya-Han</div>
+
+      <div class="poem">
+        牽起那雙溫暖的手，從此有了安心。<br>
+        兩個人、一隻貓，日常就是最甜美的風景。<br>
+        親愛的，我想以你的眼神為家，<br>
+        從此相伴，一起溫柔到老。
+      </div>
+
+      <div class="postpone-note">
+        儘管颱風讓相聚的腳步稍稍延後，卻不減我們期盼見面的心意。<br>
+        12 月 12 日，期待在冬日暖陽裡與您相見。
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- 二、婚禮詳情 -->
+    <section id="details">
+      <h2 class="section-title">婚禮詳情</h2>
+
+      <div class="venue-box">
+        <div class="venue-row">
+          <span class="venue-label">婚宴日期</span>
+          <span class="venue-value">2026.12.12 (六)</span>
+        </div>
+        <div class="venue-row">
+          <span class="venue-label">入席時間</span>
+          <span class="venue-value">中午 12:00 入席</span>
+        </div>
+        <div class="venue-row">
+          <span class="venue-label">宴席地點</span>
+          <span class="venue-value">徐州路2號庭園會館</span>
+        </div>
+        <div class="venue-row">
+          <span class="venue-label">地址</span>
+          <span class="venue-value">台北市中正區徐州路2號</span>
+        </div>
+        <div class="venue-row">
+          <span class="venue-label">廳別</span>
+          <span class="venue-value">一樓 101 廳</span>
+        </div>
+      </div>
+
+      <!-- 下拉式交通指引 -->
+      <div class="traffic-dropdowns">
+        <!-- 捷運指引 -->
+        <div class="traffic-dropdown">
+          <button type="button" class="traffic-header">
+            <span>捷運指引 MRT Directions</span>
+            <span class="traffic-arrow"></span>
+          </button>
+          <div class="traffic-body">
+            <p>搭乘淡水信義線 (紅線)至台大醫院站 2 號出口，步行約6分鐘即可抵達。</p>
+            <p>搭乘板南線 (藍線)至善導寺站 2 號出口，步行約7分鐘即可抵達。</p>
+          </div>
+        </div>
+
+        <!-- 公車指引 -->
+        <div class="traffic-dropdown">
+          <button type="button" class="traffic-header">
+            <span>公車指引 Bus Directions</span>
+            <span class="traffic-arrow"></span>
+          </button>
+          <div class="traffic-body">
+            <p>台大醫院站：227、261，步行約3分鐘即可抵達。</p>
+            <p>開南商工站：15、22、208、295、297、665、671，步行約3分鐘即可抵達。</p>
+          </div>
+        </div>
+
+        <!-- 自行開車與停車優惠 -->
+        <div class="traffic-dropdown">
+          <button type="button" class="traffic-header">
+            <span>自行開車與停車優惠 Driving &amp; Parking</span>
+            <span class="traffic-arrow"></span>
+          </button>
+          <div class="traffic-body">
+            <p>(1) 請沿林森南路往南過徐州路至台大國際會議中心停車場入口進入。</p>
+            <p>(2) 請沿仁愛路一段往西過林森南路至台大國際會議中心停車場入口進入。</p>
+            <p class="parking-highlight">喜宴當天可於台大國際會議中心停車場享有三小時免費停車優惠。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- 三、出席回函 -->
+    <section id="rsvp">
+      <h2 class="section-title">出席回函</h2>
+
+      <form id="weddingForm" novalidate>
+        <!-- 第 1 題：您的姓名 -->
+        <div class="form-group">
+          <label for="guestName">您的姓名</label>
+          <input type="text" id="guestName" name="entry.1418734916" required />
+          <div class="error-msg" id="errName">請填寫您的姓名</div>
+        </div>
+
+        <!-- 第 2 題：與新人的關係 -->
+        <div class="form-group">
+          <label for="relationship">與新人的關係</label>
+          <div class="select-wrapper">
+            <select id="relationship" name="entry.2006012577" required>
+              <option value="" disabled selected></option>
+              <option value="我是育彤的親朋好友">我是育彤的親朋好友</option>
+              <option value="我是雅涵的親朋好友">我是雅涵的親朋好友</option>
+            </select>
+          </div>
+          <div class="error-msg" id="errRelation">請選擇與新人的關係</div>
+        </div>
+
+        <!-- 第 3 題：是否能夠出席婚宴 -->
+        <div class="form-group">
+          <label for="attendance">是否能夠出席婚宴</label>
+          <div class="select-wrapper">
+            <select id="attendance" name="entry.174885555" required>
+              <option value="" disabled selected></option>
+              <option value="能夠到場，一同分享婚禮喜悅">能夠到場，一同分享婚禮喜悅</option>
+              <option value="不克出席">不克出席</option>
+            </select>
+          </div>
+          <div class="error-msg" id="errAttendance">請選擇是否能夠出席婚宴</div>
+        </div>
+
+        <!-- 動態區塊 A：選擇「能夠到場，一同分享婚禮喜悅」時展開 -->
+        <div id="attendDetailsSection" class="hidden-section">
+          <!-- 第 4 題：參加婚宴人數 (上下箭頭調整) -->
+          <div class="form-group">
+            <label for="peopleCount">參加婚宴人數</label>
+            <div class="number-stepper">
+              <input type="number" id="peopleCount" name="entry.2037824537" min="1" max="20" step="1" value="1" />
+              <div class="stepper-btns">
+                <button type="button" class="step-btn" data-target="peopleCount" data-action="up" aria-label="增加人數">
+                  <svg viewBox="0 0 10 6"><path d="M5 0L10 6H0L5 0Z"/></svg>
+                </button>
+                <button type="button" class="step-btn" data-target="peopleCount" data-action="down" aria-label="減少人數">
+                  <svg viewBox="0 0 10 6"><path d="M5 6L0 0H10L5 6Z"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="error-msg" id="errPeople">參加人數請至少填寫 1 位</div>
+          </div>
+
+          <!-- 第 5 題：素食需求人數 (上下箭頭調整) -->
+          <div class="form-group">
+            <label for="vegCount">素食需求人數</label>
+            <div class="number-stepper">
+              <input type="number" id="vegCount" name="entry.289398678" min="0" max="20" step="1" value="0" />
+              <div class="stepper-btns">
+                <button type="button" class="step-btn" data-target="vegCount" data-action="up" aria-label="增加素食人數">
+                  <svg viewBox="0 0 10 6"><path d="M5 0L10 6H0L5 0Z"/></svg>
+                </button>
+                <button type="button" class="step-btn" data-target="vegCount" data-action="down" aria-label="減少素食人數">
+                  <svg viewBox="0 0 10 6"><path d="M5 6L0 0H10L5 6Z"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="error-msg" id="errVeg">素食人數不可超過參加婚宴人數</div>
+          </div>
+
+          <!-- 第 6 題：是否需要寄送喜帖 -->
+          <div class="form-group">
+            <label for="invitationType">是否需要寄送喜帖</label>
+            <div class="select-wrapper">
+              <select id="invitationType" name="entry.84421470">
+                <option value="" disabled selected></option>
+                <option value="是的，請用e-mail寄給我">是的，請用e-mail寄給我</option>
+                <option value="是的，請用LINE傳給我">是的，請用LINE傳給我</option>
+                <option value="不用哦，已經記下婚禮資訊">不用哦，已經記下婚禮資訊</option>
+              </select>
+            </div>
+            <div class="error-msg" id="errInvite">請選擇是否需要寄送喜帖</div>
+          </div>
+
+          <!-- 第 7 題：電子信箱 (僅選「是的，請用e-mail寄給我」時出現) -->
+          <div id="emailSection" class="form-group hidden-section">
+            <label for="guestEmail">電子信箱</label>
+            <input type="email" id="guestEmail" name="entry.176527328" />
+            <div class="error-msg" id="errEmail">請輸入有效的電子信箱</div>
+          </div>
+        </div>
+
+        <!-- 動態區塊 B：選擇出席狀態後展開備註與送出鈕 -->
+        <div id="commonFooterSection" class="hidden-section">
+          <!-- 第 8 題：備註 -->
+          <div class="form-group">
+            <label for="remarks">備註</label>
+            <textarea id="remarks" name="entry.1548453918"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submitBtn">送出表單</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ==================== 送出成功新頁面視圖 ==================== -->
+  <main class="card" id="successPage">
+    <div class="success-header">
+      <h1 class="success-title">表單已成功送出</h1>
+      <p class="success-subtitle">感謝您的填寫，我們已收到您的回覆。</p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <section>
+      <h2 class="section-title">育彤 &amp; 雅涵 婚禮資訊</h2>
+
+      <div class="venue-box">
+        <div class="venue-row">
+          <span class="venue-label">婚宴日期</span>
+          <span class="venue-value">2026.12.12 (六)</span>
+        </div>
+        <div class="venue-row">
+          <span class="venue-label">入席時間</span>
+          <span class="venue-value">中午 12:00 入席</span>
+        </div>
+        <div class="venue-row">
+          <span class="venue-label">宴席地點</span>
+          <span class="venue-value">徐州路2號庭園會館</span>
+        </div>
+        <div class="venue-row">
+          <span class="venue-label">地址</span>
+          <span class="venue-value">台北市中正區徐州路2號</span>
+        </div>
+        <div class="venue-row">
+          <span class="venue-label">廳別</span>
+          <span class="venue-value">一樓 101 廳</span>
+        </div>
+      </div>
+
+      <!-- 成功頁面同樣附上交通指引下拉選單方便賓客隨時查閱 -->
+      <div class="traffic-dropdowns">
+        <div class="traffic-dropdown">
+          <button type="button" class="traffic-header">
+            <span>捷運指引 MRT Directions</span>
+            <span class="traffic-arrow"></span>
+          </button>
+          <div class="traffic-body">
+            <p>搭乘淡水信義線 (紅線)至台大醫院站 2 號出口，步行約6分鐘即可抵達。</p>
+            <p>搭乘板南線 (藍線)至善導寺站 2 號出口，步行約7分鐘即可抵達。</p>
+          </div>
+        </div>
+
+        <div class="traffic-dropdown">
+          <button type="button" class="traffic-header">
+            <span>公車指引 Bus Directions</span>
+            <span class="traffic-arrow"></span>
+          </button>
+          <div class="traffic-body">
+            <p>台大醫院站：227、261，步行約3分鐘即可抵達。</p>
+            <p>開南商工站：15、22、208、295、297、665、671，步行約3分鐘即可抵達。</p>
+          </div>
+        </div>
+
+        <div class="traffic-dropdown">
+          <button type="button" class="traffic-header">
+            <span>自行開車與停車優惠 Driving &amp; Parking</span>
+            <span class="traffic-arrow"></span>
+          </button>
+          <div class="traffic-body">
+            <p>(1) 請沿林森南路往南過徐州路至台大國際會議中心停車場入口進入。</p>
+            <p>(2) 請沿仁愛路一段往西過林森南路至台大國際會議中心停車場入口進入。</p>
+            <p class="parking-highlight">喜宴當天可於台大國際會議中心停車場享有三小時免費停車優惠。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button type="button" class="back-btn" id="backToMainBtn">返回首頁</button>
+  </main>
+
+  <script>
+    // 0. 導覽列平滑捲動控制（防止預覽環境點擊錨點時畫面閃爍重整）
+    document.querySelectorAll('#topNav a[href^="#"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetEl = document.getElementById(targetId);
+
+        if (targetEl) {
+          const navHeight = document.getElementById('topNav').offsetHeight || 60;
+          const targetPosition = targetEl.getBoundingClientRect().top + window.pageYOffset - navHeight - 20;
+          window.scrollTo({
+            top: Math.max(0, targetPosition),
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // 1. 交通資訊下拉展開控制（支援主頁與成功頁的所有下拉區塊）
+    document.querySelectorAll('.traffic-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const dropdown = header.parentElement;
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // 2. 數字上下小箭頭微調邏輯
+    const peopleCountInput = document.getElementById('peopleCount');
+    const vegCountInput = document.getElementById('vegCount');
+
+    document.querySelectorAll('.step-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const input = document.getElementById(btn.dataset.target);
+        const min = parseInt(input.min, 10);
+        const max = parseInt(input.max, 10);
+        let current = parseInt(input.value, 10);
+        if (isNaN(current)) current = min;
+
+        if (btn.dataset.action === 'up' && current < max) {
+          input.value = current + 1;
+        } else if (btn.dataset.action === 'down' && current > min) {
+          input.value = current - 1;
+        }
+
+        // 若調降參加人數低於素食人數，自動同步素食人數上限
+        if (input === peopleCountInput && parseInt(vegCountInput.value, 10) > parseInt(peopleCountInput.value, 10)) {
+          vegCountInput.value = peopleCountInput.value;
+        }
+      });
+    });
+
+    // 3. 智能表單動態展開邏輯
+    const guestNameInput = document.getElementById('guestName');
+    const relationshipSelect = document.getElementById('relationship');
+    const attendanceSelect = document.getElementById('attendance');
+    const attendDetailsSection = document.getElementById('attendDetailsSection');
+    const commonFooterSection = document.getElementById('commonFooterSection');
+    const invitationTypeSelect = document.getElementById('invitationType');
+    const emailSection = document.getElementById('emailSection');
+    const guestEmailInput = document.getElementById('guestEmail');
+
+    guestNameInput.addEventListener('input', () => {
+      document.getElementById('errName').style.display = 'none';
+    });
+
+    relationshipSelect.addEventListener('change', () => {
+      document.getElementById('errRelation').style.display = 'none';
+    });
+
+    attendanceSelect.addEventListener('change', () => {
+      document.getElementById('errAttendance').style.display = 'none';
+      const val = attendanceSelect.value;
+
+      if (val === '能夠到場，一同分享婚禮喜悅') {
+        attendDetailsSection.className = 'visible-section';
+        commonFooterSection.className = 'visible-section';
+        if (parseInt(peopleCountInput.value, 10) < 1) {
+          peopleCountInput.value = 1;
+        }
+      } else if (val === '不克出席') {
+        attendDetailsSection.className = 'hidden-section';
+        commonFooterSection.className = 'visible-section';
+        emailSection.className = 'form-group hidden-section';
+        guestEmailInput.value = '';
+      }
+    });
+
+    invitationTypeSelect.addEventListener('change', () => {
+      document.getElementById('errInvite').style.display = 'none';
+      if (invitationTypeSelect.value === '是的，請用e-mail寄給我') {
+        emailSection.className = 'form-group visible-section';
+      } else {
+        emailSection.className = 'form-group hidden-section';
+        guestEmailInput.value = '';
+        document.getElementById('errEmail').style.display = 'none';
+      }
+    });
+
+    guestEmailInput.addEventListener('input', () => {
+      document.getElementById('errEmail').style.display = 'none';
+    });
+
+    // 4. 表單驗證與送出後切換至專屬新頁面
+    const form = document.getElementById('weddingForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const mainPage = document.getElementById('mainPage');
+    const successPage = document.getElementById('successPage');
+    const navLinks = document.getElementById('navLinks');
+    const backToMainBtn = document.getElementById('backToMainBtn');
+
+    const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfNLeQcA65IjqkIlyRu3R3x8RKETSqMW9yy684GxmR4UFfj4w/formResponse';
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let hasError = false;
+
+      // 驗證第 1 題：姓名
+      if (!guestNameInput.value.trim()) {
+        document.getElementById('errName').style.display = 'block';
+        hasError = true;
+      }
+
+      // 驗證第 2 題：關係
+      if (!relationshipSelect.value) {
+        document.getElementById('errRelation').style.display = 'block';
+        hasError = true;
+      }
+
+      // 驗證第 3 題：出席意願
+      if (!attendanceSelect.value) {
+        document.getElementById('errAttendance').style.display = 'block';
+        hasError = true;
+      }
+
+      const isAttending = attendanceSelect.value === '能夠到場，一同分享婚禮喜悅';
+
+      if (isAttending) {
+        const pCount = parseInt(peopleCountInput.value, 10);
+        const vCount = parseInt(vegCountInput.value, 10);
+
+        if (isNaN(pCount) || pCount < 1) {
+          document.getElementById('errPeople').style.display = 'block';
+          hasError = true;
+        } else {
+          document.getElementById('errPeople').style.display = 'none';
+        }
+
+        if (isNaN(vCount) || vCount < 0 || vCount > pCount) {
+          document.getElementById('errVeg').style.display = 'block';
+          hasError = true;
+        } else {
+          document.getElementById('errVeg').style.display = 'none';
+        }
+
+        if (!invitationTypeSelect.value) {
+          document.getElementById('errInvite').style.display = 'block';
+          hasError = true;
+        }
+
+        if (invitationTypeSelect.value === '是的，請用e-mail寄給我') {
+          const emailVal = guestEmailInput.value.trim();
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailVal || !emailRegex.test(emailVal)) {
+            document.getElementById('errEmail').style.display = 'block';
+            hasError = true;
+          }
+        }
+      }
+
+      if (hasError) return;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = '傳送中...';
+
+      const formData = new FormData();
+      formData.append('entry.1418734916', guestNameInput.value.trim());
+      formData.append('entry.2006012577', relationshipSelect.value);
+      formData.append('entry.174885555', attendanceSelect.value);
+
+      if (isAttending) {
+        formData.append('entry.2037824537', peopleCountInput.value);
+        formData.append('entry.289398678', vegCountInput.value);
+        formData.append('entry.84421470', invitationTypeSelect.value);
+        formData.append('entry.176527328', guestEmailInput.value.trim());
+      } else {
+        formData.append('entry.2037824537', '0');
+        formData.append('entry.289398678', '0');
+        formData.append('entry.84421470', '不用哦，已經記下婚禮資訊');
+        formData.append('entry.176527328', '');
+      }
+
+      formData.append('entry.1548453918', document.getElementById('remarks').value.trim());
+
+      const showSuccessPage = () => {
+        mainPage.style.display = 'none';
+        navLinks.style.display = 'none';
+        successPage.style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        submitBtn.disabled = false;
+        submitBtn.textContent = '送出表單';
+      };
+
+      fetch(googleFormUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+      }).then(showSuccessPage).catch(showSuccessPage);
+    });
+
+    // 返回首頁按鈕
+    backToMainBtn.addEventListener('click', () => {
+      form.reset();
+      attendDetailsSection.className = 'hidden-section';
+      commonFooterSection.className = 'hidden-section';
+      emailSection.className = 'form-group hidden-section';
+      peopleCountInput.value = '1';
+      vegCountInput.value = '0';
+
+      successPage.style.display = 'none';
+      mainPage.style.display = 'block';
+      navLinks.style.display = 'flex';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
